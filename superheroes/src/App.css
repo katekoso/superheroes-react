@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'IrinaCTT', Arial, Helvetica, sans-serif;
-  src: url(./IrinaCTT.ttf);
+  src: url(./assets/fonts/IrinaCTT.ttf);
 }
 
 .Heroes {
@@ -58,7 +58,7 @@ img {
 
 .bubble-text {
   position: absolute;
-  top: 38%;
+  top: 28%;
   left: 30%;
   font-size: 1.1vw;
 }

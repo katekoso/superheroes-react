@@ -1,5 +1,5 @@
 import './App.css';
-import Hero from './hero';
+import Hero from './assets/components/hero';
 const data = require('./data.json');
 
 function App() {

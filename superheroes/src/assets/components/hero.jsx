@@ -1,10 +1,10 @@
-import bubble from './speech-bubble.svg';
+import bubble from '../images/comic.svg';
 
 function Hero(props) {
     return (
         <div className="hero">
             <div className="bubble-container">
-                <img src={bubble} className="bubble" alt="Bubble"/>
+                <object type="image/svg+xml" data={bubble} className="bubble" alt="Bubble"/>
                 <span className="bubble-text">Click</span>
             </div>    
             <h2 className="hero__name">{props.name}</h2>
