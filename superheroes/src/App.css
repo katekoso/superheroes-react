@@ -1,38 +1,64 @@
-.App {
+@font-face {
+  font-family: 'IrinaCTT', Arial, Helvetica, sans-serif;
+  src: url(./IrinaCTT.ttf);
+}
+
+.Heroes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 10px;
+  margin-left: 1.7rem;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+p, span {
+  font-size: 0.9rem;
+}
+
+p {
+  margin: 3px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span {
+  font-weight: 900;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero{
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  font-family: 'IrinaCTT', Arial, Helvetica, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bubble-container {
+  width: 20%;
+  position: absolute;
+  left: 80%;
+  top: -3px;
+}
+
+.bubble {
+  filter: invert(32%) sepia(98%) saturate(7468%) hue-rotate(356deg) brightness(99%) contrast(121%);
+  width: 100%;
+}
+
+.bubble-text {
+  position: absolute;
+  top: 38%;
+  left: 30%;
+  font-size: 1.1vw;
 }
